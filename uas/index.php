@@ -14,7 +14,12 @@
         <div class="container">
             <br />
         <br>
+        <?php 
+        include 'header.php';
+        ?>
+       
             <h2 align="center">DATA ITEM</h2><br/>
+            <button><a href="print.php">PRINT</button>
         <input type="hidden" name="id" id="id" />
             <div style="clear:both"></div>
             <br />

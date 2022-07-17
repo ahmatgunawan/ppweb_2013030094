@@ -12,7 +12,7 @@ $total_row = mysqli_num_rows($query);
 $output = '';
 if($total_row > 0)  
    while ($row = $query ->fetch_object()) { 
-    $output.= '<div class="col-4"><div class="card mt-5"><div class="card-header bg-danger">'.$row->nama.' | '.$row->barcode.'</div><div class="card-body">'.$row->satuan.' '.$row->harga.'<div>'.$row->id.'</div></div></div></div><br>';
+    $output.= '<div class="col-4"><div class="card mt-5"><div class="card-header bg-primary">'.$row->nama.' | '.$row->barcode.'</div><div class="card-body">'.$row->satuan.' '.$row->harga.'<div>'.$row->id.'</div></div></div></div><br>';
    }
 
 echo $output;
